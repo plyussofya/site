@@ -116,7 +116,7 @@ p {
 	background-color: #000000;
 }
 
-  .button {
+.button {
 	display: inline-block;
 	padding: 7px 20px;
 	font-size: 16px;
@@ -128,7 +128,7 @@ p {
 	border-radius: 100px;
 	box-shadow: 0px 0px 8px 2px black;
 	cursor: pointer;
-    transition: all 250ms;
+    	transition: all 250ms;
 }
 
 .button:hover {
