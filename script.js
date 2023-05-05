@@ -36,8 +36,17 @@ dots.forEach((dot) => {
 
 activeDot.dispatchEvent(new MouseEvent('click'));
 
+events.forEach(function(event) {
+  const btn = event.querySelector(".button");
+  const overlay = event.querySelector(".overlay");
 
+  btn.addEventListener('click', function() {
+    overlay.style.display = 'block';
+    clearInterval(interval);
+  });
 
-
-
-
+  overlay.addEventListener('click', function() {
+    overlay.style.display = 'none';
+    interval = setInterval(switchDots, 10000);
+  });
+});
